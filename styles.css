@@ -1,0 +1,20 @@
+body {
+    background-color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 30px;
+  }
+}
+
+.banner {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.centred-element {
+    text-align: center;
+}
