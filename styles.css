@@ -1,7 +1,7 @@
 body {
-    background-color: white;
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    background-image: url("images/bg.png");
 }
 
 @media only screen and (max-width: 600px) {
@@ -10,11 +10,49 @@ body {
   }
 }
 
+.nav {
+  margin: 0px;
+  padding: 10px;
+  border-bottom-style: dotted;
+  min-height: 210px;
+}
+
+.nav-links {
+  float: right;
+  display: flex;
+  align-items: center;
+  min-height: 210px;
+}
+
+ul.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.nav-sub {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.logo {
+  float: left;
+}
+
 .banner {
     width: 100%;
     max-width: 1000px;
 }
 
-.centred-element {
+.centred-text {
     text-align: center;
+}
+
+.main-box {
+  border-style: solid;
+  max-width: 1250px;
+  margin: auto;
+  background-color: white;
 }
