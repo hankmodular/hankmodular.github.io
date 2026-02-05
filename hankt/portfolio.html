@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="folio-styles.css">
     <link rel="icon" type="image/x-icon" href="../images/iconlogo.png">
     <title>Hank T's Portfolio</title>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="folio-container">
@@ -27,7 +28,7 @@
             <div>
                 <p class="images-heading">COMICS</p>
                 <!-- ROW ONE W/ UNIQUE FORMATTING -->
-                <div class="full-comic-container">
+                <div class="full-comic-container clickthumb"  popcontent='<div class="comicscroll"><img src="images/comics/comics-frightening1.png"><br><img src="images/comics/comics-frightening2.png"><br><img src="images/comics/comics-frightening3.png"><br><img src="images/comics/comics-frightening4.png"></div>'>
                     <img src="images/comics/thumbs/tales.png" class="images-thumbnail">
                     <div class="full-comic-text">
                         <h1>TALES FROM A PLACE MOST FRIGHTENING</h1>
@@ -36,19 +37,19 @@
                 </div>
                 <div class="images-container">
                     <!-- ROW TWO -->
-                    <div>
+                    <div class="clickthumb" popcontent='<img src="images/comics/comics-greatest.png">'>
                         <img src="images/comics/thumbs/greatest.png" class="images-thumbnail">
                         <p>"THE WORLD'S GREATEST CARTOONIST"</p>
                     </div>
-                    <div>
+                    <div class="clickthumb" popcontent='<img src="images/comics/comics-simpatico.png">'>
                         <img src="images/comics/thumbs/simpatico.png" class="images-thumbnail">
                         <p>SAMPLE PROTOTYPE "SIMPATICO" PAGE #1</p>
                     </div>
-                    <div>
+                    <div class="clickthumb" popcontent='<img src="images/comics/comics-simpatico2.png">'>
                         <img src="images/comics/thumbs/simpatico2.png" class="images-thumbnail">
                         <p>SAMPLE PROTOTYPE "SIMPATICO" PAGE #2</p>
                     </div>
-                    <div>
+                    <div class="clickthumb" popcontent='<img src="images/comics/comics-toronto.png">'>
                         <img src="images/comics/thumbs/toronto.png" class="images-thumbnail">
                         <p>"THE 90's AUTO-BIO BOYS of TORONTO"</p>
                     </div>
@@ -59,29 +60,29 @@
                 <p class="images-heading">ART and ILLUSTRATION</p>
                 <div class="images-container">
                     <!-- ROW ONE -->
-                    <div>
+                    <div class="clickthumb" popcontent='<img src="images/art/art-birdvogue.png">'>
                         <img src="images/art/thumbs/birdvogue.png" class="images-thumbnail">
                     </div>
-                    <div>
+                    <div class="clickthumb" popcontent='<img src="images/art/art-cantstop.png">'>
                         <img src="images/art/thumbs/cantstop.png" class="images-thumbnail">
                     </div>
-                    <div>
+                    <div class="clickthumb" popcontent='<img src="images/art/art-ronmojo.png">'>
                         <img src="images/art/thumbs/ronmojo.png" class="images-thumbnail">
                     </div>
-                    <div>
+                    <div class="clickthumb" popcontent='<img src="images/art/art-simpatico.png">'>
                         <img src="images/art/thumbs/simpatico.png" class="images-thumbnail">
                     </div>
                     <!-- ROW TWO -->
-                    <div>
+                    <div class="clickthumb" popcontent='<img src="images/art/art-icon1.png">'>
                         <img src="images/art/thumbs/icon1.png" class="images-thumbnail">
                     </div>
-                    <div>
+                    <div class="clickthumb" popcontent='<img src="images/art/art-icon2.png">'>
                         <img src="images/art/thumbs/icon2.png" class="images-thumbnail">
                     </div>
-                    <div>
+                    <div class="clickthumb" popcontent='<img src="images/art/art-icon3.png">'>
                         <img src="images/art/thumbs/icon3.png" class="images-thumbnail">
                     </div>
-                    <div>
+                    <div class="clickthumb" popcontent='<img src="images/art/art-icon4.png">'>
                         <img src="images/art/thumbs/icon4.png" class="images-thumbnail">
                     </div>
                 </div>
@@ -91,21 +92,26 @@
                 <p class="images-heading">CHARACTER DESIGN</p>
                 <div class="images-container">
                     <!-- ROW ONE -->
-                    <div>
+                    <div class="clickthumb" popcontent='<img src="images/chardesign/chardesign-beyond.png">'>
                         <img src="images/chardesign/thumbs/beyond.png" class="images-thumbnail">
                     </div>
-                    <div>
+                    <div class="clickthumb" popcontent='<img src="images/chardesign/chardesign-bruford.png">'>
                         <img src="images/chardesign/thumbs/bruford.png" class="images-thumbnail">
                     </div>
-                    <div>
+                    <div class="clickthumb" popcontent='<img src="images/chardesign/chardesign-guys.png">'>
                         <img src="images/chardesign/thumbs/mouthguy.png" class="images-thumbnail">
                     </div>
-                    <div>
+                    <div class="clickthumb" popcontent='<img src="images/chardesign/chardesign-simpatico.png">'>
                         <img src="images/chardesign/thumbs/simpatico.png" class="images-thumbnail">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+        <div id="lightbox">
+            <div class="popup">
+                <div id="popcontainer"></div>
+            </div>
+        </div>
 </body>
 </html>
