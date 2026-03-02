@@ -1,0 +1,531 @@
+@font-face {
+    font-family: "Bakbak One";
+    src: url("BakbakOne-Regular.ttf");
+}
+
+:root {
+    --onecolor: #5060f0;
+    min-height: 100%;
+}
+
+body {
+    margin: 0px;
+    background-color: #808080;
+    background-image: url("images/bg.png"), linear-gradient(to bottom, #fff, #808080);
+    background-repeat: repeat, no-repeat;
+    background-size: 200px, auto;
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    min-height: 100%;
+}
+
+img {
+    filter: grayscale(1) contrast(0.7);
+}
+
+img:hover, #lightbox img {
+    filter: grayscale(0);
+}
+
+a {
+    color: #808080;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--onecolor);
+}
+
+h2 {
+    font-family: "Bakbak One", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    line-height: 90%;
+}
+
+.sheet {
+    background-color: #000;
+    width: 1100px;
+    margin: auto;
+    background-image: url("images/border.png");
+    background-size: 350px;
+    background-position: center;
+}
+
+.imprint {
+    background-color: white;
+    height: 177px;
+    width: 140px;
+    background-image: url("images/cornerbox.png");
+    background-size: 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    margin: 20px 0px 0px 912px;
+    border: 7px #000 solid;
+    z-index: 50;
+}
+
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 25px 15px 15px;
+}
+
+.headermain {
+    text-align: center;
+    width: 860px;
+    font-size: 20px;
+    margin: 0px 20px;
+}
+
+.headermain p {
+    margin: 5px 0px;
+    font-weight: bold;
+}
+
+.headermain a {
+    color: #fff;
+    margin: 0px 25px;
+}
+
+.headermain a:hover {
+    color: var(--onecolor);
+}
+
+.line {
+    background-color: #fff;
+    width: 100%;
+    height: 3px
+}
+
+.headertitle {
+    background-image: url("images/title.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 130px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.main {
+    background-color: white;
+    width: 95%;
+    margin: auto;
+}
+
+.topshadow {
+    height: 70px;
+    background-image: url("images/shadow.png");
+    background-size: contain;
+    margin: 0px 0px -30px 0px;
+}
+
+.bottomshadow {
+    height: 70px;
+    background-image: url("images/shadow.png");
+    background-size: contain;
+    transform: rotate(180deg);
+}
+
+.content {
+    width: 70%;
+    margin: auto;
+}
+
+.contentemphasis {
+    padding: 10px 15%;
+    margin: auto;
+    background-image: url("images/lemphasis.png"), url("images/remphasis.png");
+    background-repeat: repeat-y;
+    background-position: left, right;
+    background-size: 200px;
+}
+
+.contentemphasis h2 {
+    margin: 10px 0px;
+}
+
+.titleblurb {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.titleblurb h2 {
+    width: 40%;
+    align-content: center;
+}
+
+.titleblurb p {
+    text-align: justify;
+    width: 55%;
+    padding: 0 5%;
+    align-content: center;
+}
+
+.prevcontainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.prevtext {
+    width: 40%;
+    text-align: justify;
+    align-content: center;
+}
+
+.list {
+    margin-left: 25%;
+    text-align: left;
+}
+
+.prevcontainer img {
+     width: 40%;
+     filter: grayscale(0);
+}
+
+.comicsgrid {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.comicsgrid img {
+    filter: grayscale(0);
+    border-bottom: 7px var(--onecolor) solid;
+}
+
+.comicsgridthumb {
+    width: 30%;
+    align-content: center;
+    filter: grayscale(1) contrast(0.7);
+    margin: 15px 1.66%;
+    cursor: pointer;
+    appearance: none;
+    border: none;
+    background: transparent;
+    font: inherit;
+    padding: 0;
+}
+
+.comicsgridthumb:hover, .comicsgridthumb:focus-visible {
+    color: var(--onecolor);
+    filter: grayscale(0) contrast(1);
+}
+
+.comicsgridthumb img {
+   max-width: 90%;
+}
+
+.comicsgridthumb p {
+   margin: 5px 0px 0px;
+   font-weight: bold;
+   text-decoration: underline;
+}
+
+#lightbox {
+    padding: 0;
+    border: 0;
+    width: 1000px;
+    background-color: white;
+    background-image: url("images/lemphasis.png");
+    background-repeat: repeat-y;
+    background-size: 300px;
+}
+
+#lightbox::backdrop {
+    background-color: #333333E0;
+    background-image: url("images/lightbox.png");
+    background-size: 200px;
+}
+
+body:has(dialog:modal) {
+  overflow: hidden;
+}
+
+.popup {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    padding: 30px 40px;
+}
+
+#popx {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: bold;
+    appearance: none;
+    border: none;
+    background: transparent;
+    font-family: "Times New Roman";
+}
+
+#popx:focus-visible, #popx:hover {
+    color: var(--onecolor);
+}
+
+.popimgcontainer {
+    width: 50%;
+    text-align: center;
+    align-content: center;
+}
+
+#popimg {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#poptxt {
+    width: 30%;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.aboutcontainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.aboutcontainer h2 {
+    margin: 0px;
+}
+
+.aboutimg {
+    width: 50%;
+    text-align: center;
+}
+
+.aboutimg img {
+    filter: contrast(1);
+    max-width: 100%;
+}
+
+.aboutimg p {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.abouttext {
+    width: 40%;
+    text-align: justify;
+    align-content: center;
+    padding: 0px 5%;
+}
+
+.connectlinks {
+    text-align: center;
+}
+
+.linkimg {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: top;
+    background-image: url("images/linkicon.png");
+    filter: grayscale(0) contrast(1);
+}
+
+.connectlinks a:hover > .linkimg {
+    background-position: bottom;
+}
+
+.submtext {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.submtable {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.submtable p {
+    width: 30%;
+    padding: 0px 30px;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    height: 100px;
+    background-image: url("images/vein.png");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: top 25px right 50px;
+}
+
+.footercontent {
+    padding: 10px;
+    margin: auto;
+    width: 70%;
+}
+
+@media screen and (max-width: 1100px) {
+    body {
+        background-size: 100px, auto;
+    }
+
+    * a {
+        color: var(--onecolor);
+    }
+
+    .sheet {
+        width: 90%;
+    }
+
+    .imprint {
+        width: 60px;
+        height: 85px;
+        background-size: 40px;
+        margin: auto;
+        right: 8%;
+        top: 5px;
+        border: 5px solid black;
+    }
+
+    .header {
+        padding: 10px 0px;
+    }
+
+    .headermain {
+        width: calc(95% - 85px);
+    }
+
+    .headermain p {
+        font-size: 14px;
+    }
+
+    .headermain a {
+        margin: 0;
+    }
+
+    .headertitle {
+        width: 100%;
+        height: 35px;
+    }
+
+    .topshadow, .bottomshadow {
+        height: 50px;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .contentemphasis {
+        padding: 20px 5%;
+        background-size: 30px;
+        background-image: url("images/mlemphasis.png"), url("images/mremphasis.png");
+    }
+
+    .titleblurb, .prevcontainer, .popup, .aboutcontainer {
+        flex-wrap: wrap;
+    }
+
+    .titleblurb h2, .titleblurb p {
+        width: 90%;
+    }
+
+    .prevtext, .abouttext {
+        width: 70%;
+    }
+
+    .prevcontainer img, .aboutimg {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .list {
+        margin-left: 15%;
+    }
+
+    .comicsgrid {
+        justify-content: space-evenly;
+    }
+
+    .comicsgridthumb {
+        width: 45%;
+        max-width: 200px;
+    }
+
+    .comicsgridthumb, .comicsgridthumb img {
+    filter: grayscale(0);
+    border-bottom: none;
+    color: var(--onecolor);
+    }
+
+    #lightbox {
+        width: 90%;
+        height: 90%;
+    }
+
+    .popup {
+        height: 90%;
+        margin: 0;
+        justify-self: center;
+    }
+
+    #popx {
+        right: 15px;
+    }
+
+    .popimgcontainer {
+        width: 90%;
+        height: 60%;
+    }
+
+    #poptxt {
+        width: 90%;
+        background-color: #fff;
+        padding: 10px;
+        height: 35%;
+        overflow: scroll;
+        border: 3px solid #eee;
+        scrollbar-color: black white;
+    }
+
+    .aboutimg {
+    width: 90%;
+    }
+
+    .abouttext {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .submtable {
+        width: 80%;
+        margin: auto;
+    }
+
+    .submtable p {
+        width: 50%;
+        padding: 0px 10px;
+    }
+
+    .linkimg {
+    background-position: bottom;
+    }
+
+    .footer {
+        background-size: 20px;
+        background-position: top 10px right 10px;
+    }
+
+    .footercontent {
+        width: 90%;
+    }
+}
