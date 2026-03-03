@@ -360,7 +360,6 @@ body:has(dialog:modal) {
 .footer {
     background-color: #000;
     color: #fff;
-    height: 100px;
     background-image: url("images/vein.png");
     background-repeat: no-repeat;
     background-size: 50px;
